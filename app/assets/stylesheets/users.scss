@@ -1,7 +1,47 @@
+body {
+  background-color: #E5E5E5;
+  font-family: 'RobotoDraft', sans-serif;
+}
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
 core-toolbar {
   background: #03a9f4;
   color: white;
 }
 paper-tabs {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   text-transform: uppercase;
+}
+@media (min-width: 481px) {
+  .container {
+    width: 400px;
+  }
+}
+.post-card {
+  display: block;
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.card-header {
+  margin-bottom: 10px;
+}
+/* Add your styles here: */
+.card-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.card-header img {
+  width: 70px;
+  border-radius: 50%;
+  margin: 10px;
 }
